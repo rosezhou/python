@@ -31,17 +31,17 @@ class PlaneGame(object):
 	#创建精灵组
 	def __create_sprites(self):
 		#第一个英雄
-		self.hero = Hero()
+		self.hero = Zhourunlin_Hero()
 		#第二个英雄
-		self.newhero = NewHero()
+		self.newhero = Zhourunlin_NewHero()
 
 		# #通过Hero类 实例第二个英雄
 		# self.newhero = Hero()
 		# self.rect.left = SCREEN_RECT.left - 50
 		# self.rect.bottom = SCREEN_RECT.bottom
 		#背景精灵
-		bj1 = Background()
-		bj2 = Background(True)
+		bj1 = Zhourunlin_Background()
+		bj2 = Zhourunlin_Background(True)
 		self.back_groud = pygame.sprite.Group(bj1,bj2)
 
 		#敌机精灵
@@ -91,7 +91,7 @@ class PlaneGame(object):
 			#敌机出场
 			if event.type == CREATE_ENEMY_EVENT:
 				print("敌机出场")
-				self.enemy_group.add(Enemy())
+				self.enemy_group.add(Zhourunlin_Enemy())
 			#空格发射子弹	
 			elif keys_pressed[pygame.K_SPACE]:
 				self.hero.fire()

@@ -29,7 +29,7 @@ class GameSprite(pygame.sprite.Sprite):
 
 
 
-class Background(GameSprite):
+class Zhourunlin_Background(GameSprite):
 	"""背景精灵"""
 	
 	def __init__(self,is_alt = False):
@@ -46,7 +46,7 @@ class Background(GameSprite):
 
 
 
-class Enemy(GameSprite):
+class Zhourunlin_Enemy(GameSprite):
 	"""敌机精灵"""
 
 
@@ -72,7 +72,7 @@ class Enemy(GameSprite):
 
 
 
-class Hero(GameSprite):
+class Zhourunlin_Hero(GameSprite):
 	"""英雄精灵"""
 
 	def __init__(self):
@@ -107,7 +107,7 @@ class Hero(GameSprite):
 	def fire(self):
 
 		for i in (1,2,3):
-			bullet = Bullet()
+			bullet = Zhourunlin_Bullet()
 
 			bullet.rect.x = self.rect.left - 20*i
 			bullet.rect.centery = self.rect.centery
@@ -115,7 +115,7 @@ class Hero(GameSprite):
 			#将子弹精灵添加到精灵组
 			self.bullets.add(bullet)
 
-class NewHero(GameSprite):
+class Zhourunlin_NewHero(GameSprite):
 	"""第二个英雄"""
 
 	def __init__(self):
@@ -148,7 +148,7 @@ class NewHero(GameSprite):
 	def fire(self):
 
 		for i in (1,2,3):
-			bullet2 = Bullet()
+			bullet2 = Zhourunlin_Bullet()
 
 			bullet2.rect.x = self.rect.left - 20*i
 			bullet2.rect.centery = self.rect.centery
@@ -160,7 +160,7 @@ class NewHero(GameSprite):
 
 
 
-class Bullet(GameSprite):
+class Zhourunlin_Bullet(GameSprite):
 	"""子弹精灵"""
 	def __init__(self):
 		super().__init__("./images/bullet1.png",8)
