@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>伪类选择器</title>
+		<meta charset="utf-8">
+		<style type="text/css">
+			/*
+			伪类选择器
+			:link 普通链接
+			*/
+			a:link{color: green}
+			/*
+			:visited 访问过得链接
+			*/
+			a:visited{background-color: yellow }
+			/*
+			:active 表示超链接被点击的状态
+			*/
+			a:active{color: red}
+			/*
+			:hover 表示鼠标移入的状态
+			*/
+			a:hover{color: skyblue}
+			/*
+			兼容大部分浏览器
+			*/
+			p::selection{background-color: orange; }
+			/*
+			兼容火狐浏览器
+			*/
+			p::-moz-selection{background-color: black; }
+		</style>
+	</head>
+	<body>
+			<a href="www.baidu.com">这是一个无所不知</a><br>
+			<a href="www.sogou.com">这是一个链接</a>
+			<p>我是一个段落</p>
+				<input type="text" />
+	</body>
+</html>
