@@ -4,28 +4,51 @@
 	<title>作业</title>
 	<meta charset="utf-8">
 	<style type="text/css">
-		li{
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.nav{
 			list-style: none;
-			width: 98px;
-			height: 48px;
-			border: 1px solid gold;
-			color: pink;
-			font: 16px "雅黑";
+			width: 694px;
+			height: 50px;
+		}
+		.nav li{
 			float: left;
+			width: 12.5%;
+			border:1px solid gold;
+		}
+		.nav a{
+			display: block;
+			width: 100%;
 			text-align: center;
-			padding-top: 16px;
+			color: pink;
+			font:16px "雅黑";
+			padding: 10px 0;
+			text-decoration: none;
+		}
+		a:hover{
+			background-color: orange;
+		}
+		.clearfix:after{
+			content: "";
+			display: block;
+			clear: both;
+		}
+		.clearfix{
+			zoom: 1;
 		}
 	</style>
 </head>
 <body>
-	<ul>
-		<li>首页</li>
-		<li>公司简介</li>
-		<li>解决方案</li>
-		<li>公司新闻</li>
-		<li>行业动态</li>
-		<li>招贤纳才</li>
-		<li>联系我们</li>
+	<ul class="nav clearfix">
+		<li><a href="#">首页</a></li>
+		<li><a href="#">公司简介</a></li>
+		<li><a href="#">解决方案</a></li>
+		<li><a href="#">公司新闻</a></li>
+		<li><a href="#">行业动态</a></li>
+		<li><a href="#">招贤纳才</a></li>
+		<li><a href="#">联系我们</a></li>
 	</ul>
 </body>
 </html>
