@@ -1,0 +1,67 @@
+body{
+	background: url(image/polo360.png);
+	background-repeat: repeat-x;
+
+}
+.w{
+	width: 940px;
+	margin: 0 auto;
+}
+.title1{
+	padding-top: 37px;
+	padding-bottom: 46px;
+}
+.logo{
+	margin-left: 15px;
+/* 	background-color: orange; */
+	float: left;
+}
+
+/* 设置导航栏 */
+.nav{
+	float: right;
+	margin-top: 22px;
+}
+.nav li{
+	float: left;
+	padding: 0 10px 8px;
+	border-left: 1px #d6d6d6 dotted;
+}
+.nav a{
+	color: #666666;
+	font: bold 14px Georgia;
+	text-decoration: none;
+}
+.nav p{
+	color: #b7b7b7;
+	font: 12px Tahoma;
+}
+.nav a:hover{
+	color: #b8b2b2;
+	text-decoration: underline;
+}
+.publicity img{
+	margin-top: 37px;
+}
+/* 设置阴影 */
+.publicity{
+	background: url(image/bg-yinying.png) no-repeat bottom center;
+	height: 471px;
+	position: relative;
+}
+/* 设置小圆点 */
+.pointerDiv{
+	position: absolute;
+	top: 430px;
+	left: 15px;
+}
+.pointerDiv a{
+	float: left;
+	background: url(image/but.png) no-repeat;
+	width: 17px;
+	height: 17px;
+	margin-left: 4px;
+}
+.pointerDiv .active,.pointerDiv a:hover{
+	background: url(image/buttun.png) no-repeat;
+}
